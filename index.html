@@ -7,23 +7,10 @@
   <title>Nhi Le - Life Coach dạy MIỄN PHÍ đầu tiên tại Việt Nam</title>
   <link rel="stylesheet" href="./styles/style.css">
   <script defer src="./scripts/app.js"></script>
-  <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-1.11.0.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  ></script>
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-  />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -33,7 +20,7 @@
         <div class="header-nav">
           <div class="header-logo">
             <a href="http://nhi.sg">
-              <img src="./images/logo.png" alt="nhi.sg">
+              <img src="./images/logo.png" id="header-logo-img" alt="nhi.sg">
             </a>
           </div>
           <ul class="header-main-menu">
@@ -69,7 +56,11 @@
                 </li>
               </ul>
               <span class="header-main-item__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDownSmall"><path d="M6 10l6 6 6-6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ChevronDownSmall">
+                  <path d="M6 10l6 6 6-6" />
+                </svg>
               </span>
             </li>
             <li class="header-main-item">
@@ -95,7 +86,11 @@
                 </li>
               </ul>
               <span class="header-main-item__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDownSmall"><path d="M6 10l6 6 6-6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ChevronDownSmall">
+                  <path d="M6 10l6 6 6-6" />
+                </svg>
               </span>
             </li>
             <li class="header-main-item">
@@ -106,7 +101,11 @@
                 </li>
               </ul>
               <span class="header-main-item__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDownSmall"><path d="M6 10l6 6 6-6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ChevronDownSmall">
+                  <path d="M6 10l6 6 6-6" />
+                </svg>
               </span>
             </li>
             <li class="header-main-item">
@@ -126,6 +125,13 @@
                 <img src="./images/logo-light.jpeg" alt="nhi.sg">
               </a>
             </div>
+            <label class="header-menu__btn" for="menu__toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="ai ai-Cross">
+                <path d="M20 20L4 4m16 0L4 20" />
+              </svg>
+            </label>
             <ul class="header-main-menu">
               <li class="header-main-item active">
                 <a href="#">HOME</a>
@@ -158,8 +164,12 @@
                     <a href="#">Interior Design</a>
                   </li>
                 </ul>
-                <span class="header-main-item__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDownSmall"><path d="M6 10l6 6 6-6"/></svg>
+                <span class="header-main-item__icon" onclick="handleClickItemIcon(event)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="ai ai-ChevronDownSmall">
+                    <path d="M6 10l6 6 6-6" />
+                  </svg>
                 </span>
               </li>
               <li class="header-main-item">
@@ -184,8 +194,12 @@
                     <a href="#">Ikigai Zone</a>
                   </li>
                 </ul>
-                <span class="header-main-item__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDownSmall"><path d="M6 10l6 6 6-6"/></svg>
+                <span class="header-main-item__icon" onclick="handleClickItemIcon(event)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="ai ai-ChevronDownSmall">
+                    <path d="M6 10l6 6 6-6" />
+                  </svg>
                 </span>
               </li>
               <li class="header-main-item">
@@ -195,8 +209,12 @@
                     <a href="#">Reviews</a>
                   </li>
                 </ul>
-                <span class="header-main-item__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDownSmall"><path d="M6 10l6 6 6-6"/></svg>
+                <span class="header-main-item__icon" onclick="handleClickItemIcon(event)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="ai ai-ChevronDownSmall">
+                    <path d="M6 10l6 6 6-6" />
+                  </svg>
                 </span>
               </li>
               <li class="header-main-item">
@@ -234,9 +252,442 @@
             </div>
           </div>
         </div>
+        <div class="slider-socials">
+          <a href="https://www.youtube.com/c/NHILELifecoach" class="slider-socials__link">
+            <img src="./images/youtube.png" alt="youtube">
+          </a>
+          <a href="https://www.youtube.com/c/NHILELifecoach" class="slider-socials__link">
+            <img src="./images/facebook.png" alt="facebook">
+          </a>
+          <a href="https://www.youtube.com/c/NHILELifecoach" class="slider-socials__link">
+            <img src="./images/tik-tok.png" alt="tik-tok">
+          </a>
+          <a href="https://www.youtube.com/c/NHILELifecoach" class="slider-socials__link">
+            <img src="./images/instagram.png" alt="instagram">
+          </a>
+          <a href="https://www.youtube.com/c/NHILELifecoach" class="slider-socials__link">
+            <img src="./images/linkedin.png" alt="linkedin">
+          </a>
+        </div>
       </section>
+      <section class="page-section about">
+        <div class="section-container about-wrap">
+          <div class="about-image">
+            <img src="./images/about-me.webp" alt="about-me">
+          </div>
+          <div class="about-content">
+            <p class="tag-line">About me</p>
+            <h1 class="title about-title">NhiLe Life Coach</h1>
+            <p class="text-content">Welcome to the FREE and VALUABLE knowledge treasure trove of Nhi Le - the first Life
+              Coach in Vietnam. Nhi Le helps people become happy, develop themselves, and find the answer to the
+              question "Who am I?" via the lessons and experiences she has accumulated.</p>
+            <p class="text-content">Despite growing up in an imperfect environment in Quang Nam province and becoming a
+              single mother in a foreign land, Nhi Le never gave up. She tirelessly learns and develops herself,
+              standing up against obstacles. With effort and perseverance, Nhi Le has achieved success in her many
+              roles, from investor, entrepreneur, advisor, leader to renowned healing speaker, not only in Singapore but
+              also in many other parts of the world.</p>
+            <p class="text-content">To assist the people of Vietnam in transforming their lives and uncovering their
+              inner potential, Nhi Le, along with the Strengths Quotient Institute (SQI) and the NhiLe Team, is bringing
+              the copyright of many quality courses to her homeland. The positive environment and valuable knowledge of
+              the Ikigai Zone and SQI have also helped Nhi Le continuously "rebirth" herself into a more perfect
+              version.</p>
+            <a href="#" class="btn btn-link">
+              <span class="btn-text">View more</span>
+              <span class="btn-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ArrowRight">
+                  <path d="M4 12h16" />
+                  <path d="M13 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="page-section award">
+        <div class="section-container">
+          <div class="award-wrapper">
+            <span class="award-counters-title">Impressive Achievement</span>
+            <div class="award-counters">
+              <div class="award-counter">
+                <div class="text-content">
+                  <span class="award-number" id="award-youtube">218,000</span>
+                  <span class="award-suffix">+</span>
+                </div>
+                <p class="award-description">Youtube subscribers</p>
+              </div>
+              <div class="award-counter">
+                <div class="text-content">
+                  <span class="award-number" id="award-tiktok">423,500</span>
+                  <span class="award-suffix">+</span>
+                </div>
+                <p class="award-description">Tiktok followers</p>
+              </div>
+              <div class="award-counter">
+                <div class="text-content">
+                  <span class="award-number" id="award-facebook">224,000</span>
+                  <span class="award-suffix">+</span>
+                </div>
+                <p class="award-description">Facebook followers</p>
+              </div>
+            </div>
+            <div class="award-services">
+              <div class="award-service">
+                <div class="award-image">
+                  <img src="./images/award-1.png" alt="award">
+                </div>
+                <h3 class="award-title">Privacy life coach</h3>
+              </div>
+              <div class="award-service">
+                <div class="award-image">
+                  <img src="./images/award-2.png" alt="award">
+                </div>
+                <h3 class="award-title">MENTOR</h3>
+              </div>
+              <div class="award-service">
+                <div class="award-image">
+                  <img src="./images/award-3.png" alt="award">
+                </div>
+                <h3 class="award-title">TEAM BUILDING</h3>
+              </div>
+              <div class="award-service">
+                <div class="award-image">
+                  <img src="./images/award-4.png" alt="award">
+                </div>
+                <h3 class="award-title">SPEAKER</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section services">
+        <div class="section-container services-container">
+          <h1 class="title text-center">OTHER SERVICES</h1>
+          <ul class="services-list">
+            <li class="services-item active">
+              <h4>Marketing</h4>
+            </li>
+            <li class="services-item">
+              <h4>Editor</h4>
+            </li>
+            <li class="services-item">
+              <h4>Design</h4>
+            </li>
+            <li class="services-item">
+              <h4>Web/App</h4>
+            </li>
+            <li class="services-item">
+              <h4>Social</h4>
+            </li>
+            <li class="services-item">
+              <h4>Branding</h4>
+            </li>
+            <li class="services-item">
+              <h4>Interior Design</h4>
+            </li>
+          </ul>
+          <div class="services-portfolios">
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-1.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-2.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-3.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-4.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-5.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-6.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-7.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-8.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-9.jpg" alt="portfolio">
+            </div>
+            <div class="services-portfolio-item">
+              <img src="./images/portfolio-10.jpg" alt="portfolio">
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-link">
+              <span class="btn-text">View more</span>
+              <span class="btn-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ArrowRight">
+                  <path d="M4 12h16" />
+                  <path d="M13 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="page-section customer">
+        <p class="tag-line customer-tag-line section-container">CUSTOMERS TALK ABOUT US</p>
+        <div class="customer-slider">
+          <div class="customer-item">
+            <div class="section-container customer-item-wrap">
+              <div class="customer-body">
+                <h3 class="title customer-title">DOUGLAS STEVENSON</h3>
+                <p class="text-content customer-content">
+                  I've been working with Team Nhile for the past 12 weeks, and they have demonstrated an extremely high
+                  level of professionalism and mastery in how they have executed the media strategy to help me build my
+                  subscriber base. They are extremely meticulous and detailed, and very proactive in their approach.
+                  <br>
+                  There are not many teams that I have worked with that operate so systematically and produce impeccable
+                  quality in a consistent and predictable manner. They find gems even with my current content and
+                  repurpose them in ways that are creative and innovative.
+                  <br>
+                  They have been amazing to work with, and have constantly exceeded my expectations. They play at a
+                  gradient that has become a tough act for others to follow.
+                  <br>
+                  10 stars out of 5!
+                </p>
+                <span class="read-more" onclick="handleExpandedContent(event)">Read more</span>
+              </div>
+              <div class="customer-images">
+                <div class="custom-image-left">
+                  <img src="./images/douglas-large.webp" alt="customer">
+                </div>
+                <div class="custom-image-right">
+                  <img src="./images/douglas-small.webp" alt="customer">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="customer-item">
+            <div class="section-container customer-item-wrap">
+              <div class="customer-body">
+                <h3 class="title customer-title">JOVAN MEDRANO</h3>
+                <p class="text-content customer-content">
+                  I have been working with the NhiLe team now for several months and all I can say is that it has been a
+                  great working experience. They are very polite and responsive in their communications. There’s a lot
+                  going on behind the scenes that they are taking care of - like editing, design, posting, and more -
+                  and everything just works in clockwork so I don’t need to worry about anything. Which helps me do what
+                  I do best, which is sharing the knowledge that will help my audience. I definitely highly recommend
+                  working with them!
+                </p>
+                <span class="read-more" onclick="handleExpandedContent(event)">Read more</span>
+              </div>
+              <div class="customer-images">
+                <div class="custom-image-left">
+                  <img src="./images/jovan-medrano-large.webp" alt="customer">
+                </div>
+                <div class="custom-image-right">
+                  <img src="./images/jovan-medrano-small.webp" alt="customer">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="customer-item">
+            <div class="section-container customer-item-wrap">
+              <div class="customer-body">
+                <h3 class="title customer-title">Michael Le</h3>
+                <p class="text-content customer-content">
+                  After partnering up with NhiLe team my business has taken a quick positive turn. With a team full of
+                  talented individuals that are all, even though already on top of their profession, eager to learn and
+                  improve themselves every day. All with their own unique skill set they will, when combined, inevitably
+                  create greatness for you.
+                  <br>
+                  NhiLe team has helped my business to accelerate and grow really fast on social media platforms by
+                  offering and delivering professional management and modern techniques to create content and make sure
+                  my business will keep up with this fast growing online marketing industry.
+                  <br>
+                  My business and life has changed a lot after teaming up and I feel so grateful that our path has
+                  crossed. Outstanding methods on top of excellent teamwork equals extraordinary results.
+                </p>
+                <span class="read-more" onclick="handleExpandedContent(event)">Read more</span>
+              </div>
+              <div class="customer-images">
+                <div class="customer-image-left">
+                  <img src="./images/michael-le-large.webp" alt="customer">
+                </div>
+                <div class="customer-image-right">
+                  <img src="./images/michael-le-small.webp" alt="customer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="button-scroll-up" onclick="handleScrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ArrowUp">
+          <path d="M12 20V4" />
+          <path d="M5 11l7-7 7 7" />
+        </svg>
+      </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <section class="page-section category">
+        <div class="section-container category-container">
+          <div class="category-article" onclick="handleClickExpandedCategory(event)">
+            <h4 class="category-title">
+              Services
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ChevronDownSmall">
+                  <path d="M6 10l6 6 6-6" />
+                </svg>
+              </span>
+            </h4>
+            <ul class="category-list">
+              <li class="category-item">
+                <a href="#">Digital marketing</a>
+              </li>
+              <li class="category-item">
+                <a href="#">Video editor</a>
+              </li>
+              <li class="category-item">
+                <a href="#">graphic design</a>
+              </li>
+              <li class="category-item">
+                <a href="#">Website & App Development</a>
+              </li>
+              <li class="category-item">
+                <a href="#">social media support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="category-article" onclick="handleClickExpandedCategory(event)">
+            <h4 class="category-title">
+              Our pages
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ChevronDownSmall">
+                  <path d="M6 10l6 6 6-6" />
+                </svg>
+              </span>
+            </h4>
+            <ul class="category-list">
+              <li class="category-item">
+                <a href="#">free training</a>
+              </li>
+              <li class="category-item">
+                <a href="#">about us</a>
+              </li>
+              <li class="category-item">
+                <a href="#">private coaching</a>
+              </li>
+            </ul>
+          </div>
+          <div class="category-article" onclick="handleClickExpandedCategory(event)">
+            <h4 class="category-title">
+              support
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ChevronDownSmall">
+                  <path d="M6 10l6 6 6-6" />
+                </svg>
+              </span>
+            </h4>
+            <ul class="category-list">
+              <li class="category-item">
+                <a href="#">contact</a>
+              </li>
+              <li class="category-item">
+                <a href="#">privacy</a>
+              </li>
+              <li class="category-item">
+                <a href="#">faq</a>
+              </li>
+              <li class="category-item">
+                <a href="#">terms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="category-article" onclick="handleClickExpandedCategory(event)">
+            <h4 class="category-title">
+              Register
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="ai ai-ChevronDownSmall">
+                  <path d="M6 10l6 6 6-6" />
+                </svg>
+              </span>
+            </h4>
+            <ul class="category-list">
+              <li class="category-item">
+                <a href="#">Nhi's House members</a>
+              </li>
+              <li class="category-item">
+                <a href="#">NhiLe Team volunteers</a>
+              </li>
+              <li class="category-item">
+                <a href="#">NhiLe Ebook for FREE</a>
+              </li>
+              <li class="category-item">
+                <a href="#">Website Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page-section bottom">
+        <div class="section-container bottom-container">
+          <a href="#" class="bottom-logo">
+            <img src="./images/logo.png" alt="logo">
+          </a>
+          <span class="bottom-copyright">©2023. All rights reserved</span>
+          <div class="bottom-socials">
+            <a href="https://www.youtube.com/c/NHILELifecoach" class="bottom-socials__link">
+              <img src="./images/youtube-rounded.png" alt="youtube">
+            </a>
+            <a href="https://www.facebook.com/AnneNhiLe" class="bottom-socials__link">
+              <img src="./images/facebook-rounded.png" alt="youtube">
+            </a>
+            <a href="https://www.tiktok.com/@nhile_official" class="bottom-socials__link">
+              <img src="./images/tiktok-rounded.png" alt="youtube">
+            </a>
+            <a href="https://www.instagram.com/nhi_sg" class="bottom-socials__link">
+              <img src="./images/instagram-rounded.png" alt="youtube">
+            </a>
+            <a href="https://t.me/nhileofficial" class="bottom-socials__link">
+              <img src="./images/telegram-rounded.png" alt="youtube">
+            </a>
+            <a href="https://open.spotify.com/show/075oMTANwNWPZpQgvwh674?si=aa25bcf2f4c848ee"
+              class="bottom-socials__link">
+              <img src="./images/spotify-rounded.png" alt="youtube">
+            </a>
+            <a href="https://www.linkedin.com/company/77701425" class="bottom-socials__link">
+              <img src="./images/linkedin-rounded.png" alt="youtube">
+            </a>
+          </div>
+          <div class="bottom-language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 19 19"
+              class="language-icon mr-3">
+              <path
+                d="M9.5 0C4.258 0 0 4.258 0 9.5S4.258 19 9.5 19 19 14.742 19 9.5 14.742 0 9.5 0zm-.412.871v4.09A16.555 16.555 0 0 1 6.1 4.622c.163-.494.349-.953.555-1.365.68-1.361 1.543-2.19 2.433-2.387zm.824 0c.89.198 1.753 1.026 2.433 2.387.207.413.393.874.556 1.37-.925.192-1.931.308-2.99.332V.871zm-2.81.29c-.448.468-.846 1.053-1.183 1.728-.236.47-.442.99-.622 1.543a11.459 11.459 0 0 1-2.17-.81A8.656 8.656 0 0 1 7.101 1.16zm4.797 0a8.656 8.656 0 0 1 3.97 2.457c-.621.325-1.351.602-2.164.82a11.224 11.224 0 0 0-.624-1.549c-.337-.675-.735-1.26-1.182-1.728zm4.51 3.1a8.625 8.625 0 0 1 1.757 4.827h-3.721a16.972 16.972 0 0 0-.509-3.855c.924-.25 1.756-.578 2.472-.971zm-13.822.007c.724.384 1.558.708 2.479.958a16.968 16.968 0 0 0-.511 3.862H.834a8.625 8.625 0 0 1 1.753-4.82zm3.28 1.151c1.002.213 2.084.34 3.221.365v3.304h-3.71c.03-1.322.204-2.567.49-3.669zm7.267.006c.285 1.1.457 2.343.488 3.663h-3.71V5.784a17.487 17.487 0 0 0 3.222-.36zM.834 9.912h3.721c.03 1.382.207 2.686.509 3.855-.924.25-1.756.578-2.472.971A8.625 8.625 0 0 1 .834 9.912zm4.544 0h3.71v3.304a17.487 17.487 0 0 0-3.222.36 16.207 16.207 0 0 1-.488-3.664zm4.534 0h3.71a16.203 16.203 0 0 1-.49 3.669 17.356 17.356 0 0 0-3.22-.365V9.912zm4.533 0h3.721a8.625 8.625 0 0 1-1.753 4.82 11.985 11.985 0 0 0-2.479-.958c.304-1.17.48-2.478.511-3.862zM9.088 14.04v4.089c-.89-.198-1.753-1.026-2.433-2.387a10.26 10.26 0 0 1-.556-1.37 16.685 16.685 0 0 1 2.99-.332zm.824 0c1.056.025 2.061.143 2.988.337-.163.494-.349.953-.555 1.365-.68 1.361-1.543 2.19-2.433 2.387v-4.09zm-4.617.522c.18.555.387 1.077.624 1.549.337.675.735 1.26 1.182 1.728a8.656 8.656 0 0 1-3.97-2.457 10.736 10.736 0 0 1 2.164-.82zm8.408.006c.808.218 1.539.492 2.17.81a8.656 8.656 0 0 1-3.974 2.461c.447-.468.845-1.053 1.182-1.728.236-.47.442-.99.622-1.543z">
+              </path>
+            </svg>
+            <span class="bottom-language__text">English</span>
+            <span class="bottom-language__icon"></span>
+          </div>
+          <div class="bottom-darkmode">
+            <label>
+              <input type='checkbox' id="switch-theme" onchange="handleChangeTheme(event)" checked>
+              <span class='slider'></span>
+            </label>
+          </div>
+        </div>
+      </section>
+    </footer>
   </div>
 </body>
 
